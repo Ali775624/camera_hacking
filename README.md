@@ -4,11 +4,11 @@
 
 <div align="center">
 
-[![https://telegram.me/name_dark](https://img.shields.io/badge/Telegram-Channel-orange.svg?style=flat-square)](https://t.me/name_dark)
+[![https://t.me/Driving_uncle_personally](https://t.me/Driving_uncle_personally)](https://t.me/Driving_uncle_personally)
 
 </div>
 
-This tool is based upon [Psi](https://github.com/MR-DARK54) .This is a telegram implementation with extra features than Psi.
+This tool is based upon [Psi](https://github.com/Ali775624) .This is a telegram implementation with extra features than Psi.
 
 
 
@@ -30,7 +30,7 @@ Snaps the picture from camera.
 
 
 
-### Try it at [@camerahacking_bot](https://t.me/dark0rat54_bot)
+### Try it at [@camerahacking_bot](https://t.me/Driving_uncle_personally)
 
 
 
@@ -49,33 +49,3 @@ You can create your own bot, click on 👇👇
 
 
 [![Run on Repl.it](https://replit.com/badge/github/Th30neAnd0nly/TrackDown)](https://repl.it/github/MR-DARK54/camera_hacking)
-
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-### Don't forget to put a star
-
-
-
-
-
-Buy me a coffee
-I like coffee
-
-
-
-
-
-
-
-
-
-
