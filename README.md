@@ -30,7 +30,7 @@ Snaps the picture from camera.
 
 
 
-### Try it at [@camerahacking_bot](https://t.me/Driving_uncle_personally)
+### Try it at [@Driving_uncle_personally](https://t.me/Driving_uncle_personally)
 
 
 
